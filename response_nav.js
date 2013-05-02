@@ -8,4 +8,5 @@ $(".resp_nav li").each(function(index){
 });
 var liPad = lefty+righty; //account for padding, must parseInt because string is returned
 var newWidth = (navWidth/liAmt)- (liPad+2); //calculate new width for list items, subtract 1 as buffer
+$(".resp_nav li a").css('display','inline-block'); //must change display so width change will work
 $(".resp_nav li a").width(newWidth);
